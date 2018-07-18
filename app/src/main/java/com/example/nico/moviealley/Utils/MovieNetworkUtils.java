@@ -1,4 +1,4 @@
-package com.example.nico.moviealley;
+package com.example.nico.moviealley.Utils;
 
 import android.net.Uri;
 
@@ -11,12 +11,14 @@ import java.util.Scanner;
 
 public class MovieNetworkUtils {
 
-    static final String TMDB_Base_URl = "https://api.themoviedb.org/3/movie/latest";
+    static final String TMDB_Base_URl = "https://api.themoviedb.org/3/movie";
     static final String TMDB_IMAGE_URL = "https://image.tmdb.org/t/p/w185";
 
     static final String PARAM_API_KEY = "api_key";
     static final String TMDB_API_KEY = "";
     static final String PARAM_SEARCH = "query";
+    static final String TMDB_SORT_POPULARITY = "popular";
+    static final String TMDB_SORT_HIGHEST_RATED = "top_rated" ;
 
 
 
@@ -24,6 +26,7 @@ public class MovieNetworkUtils {
 
 
             Uri uriBuilder = Uri.parse(TMDB_Base_URl).buildUpon()
+                    .appendPath(TMDB_SORT_POPULARITY)
                     .appendQueryParameter(PARAM_API_KEY , TMDB_API_KEY).build();
 
 
