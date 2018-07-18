@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pladeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:fontFamily="monospace"
+        android:text="@string/text_some"
+        tools:targetApi="jelly_bean" />
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <TextView
+         android:id="@+id/json_tv_holder"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="text holder for json response "
+         android:gravity="center"/>
+
+ </ScrollView>
+
+
+</LinearLayout>
