@@ -11,10 +11,11 @@ import android.widget.TextView;
 
 public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.MovieAdapterViewHolder>{
 
-    String sometext ;
+    String[] mData ;
 
-    public MovieAdapter(String text){
-        sometext = text;
+    public MovieAdapter(String[] data){
+
+        this.mData = data;
     }
 
 
@@ -36,7 +37,7 @@ public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.MovieAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MovieAdapterViewHolder holder, int position) {
-        holder.movieTitle.setText(sometext);
+        holder.movieTitle.setText(mData[position]);
 
     }
 
