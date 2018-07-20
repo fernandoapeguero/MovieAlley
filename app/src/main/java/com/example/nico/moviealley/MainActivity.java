@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.nico.moviealley.JsonData.JsonData;
 import com.example.nico.moviealley.Utils.MovieNetworkUtils;
 
 import java.io.IOException;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView mRecycleView ;
     MovieAdapter mAdapter;
-    int numberOfColumns = 6;
+    int numberOfColumns = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             if(s != null && !s.equals("")){
                 Toast.makeText(MainActivity.this, "Yeah Json is here", Toast.LENGTH_SHORT).show();
+                JsonData.jsonParse(s);
 
             }
             super.onPostExecute(s);

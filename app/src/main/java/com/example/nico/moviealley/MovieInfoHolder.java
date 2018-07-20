@@ -19,23 +19,23 @@ public class MovieInfoHolder {
       }
 
 
-      String getmMovieTitle(){
+     public String getmMovieTitle(){
           return mMovieTitle;
       }
 
-      String getmMovieImage(){
+     public String getmMovieImage(){
           return mMovieImage;
       }
 
-      String getmMovieSipnosis(){
+     public   String getmMovieSipnosis(){
           return mMovieSipnosis;
       }
 
-      int getmMovieRating(){
+     public int getmMovieRating(){
           return mMovieRating;
       }
 
-      String getMreleaseDate(){
+     public String getMreleaseDate(){
           return mreleaseDate;
       }
 

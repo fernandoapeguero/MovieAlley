@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.nico.moviealley.Utils.MovieNetworkUtils;
+import com.squareup.picasso.Picasso;
+
 public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.MovieAdapterViewHolder>{
 
     String[] mData ;
@@ -37,21 +40,21 @@ public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.MovieAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MovieAdapterViewHolder holder, int position) {
-        holder.movieTitle.setText(mData[position]);
+
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mData.length;
     }
 
     class MovieAdapterViewHolder extends RecyclerView.ViewHolder{
 
-         TextView movieTitle;
+         TextView moviePoster;
         public MovieAdapterViewHolder(View itemView) {
             super(itemView);
-            movieTitle = itemView.findViewById(R.id.movie_title);
+            moviePoster = itemView.findViewById(R.id.movie_poster);
         }
     }
 
