@@ -31,7 +31,7 @@ public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.MovieAdapte
         LayoutInflater inflater = LayoutInflater.from(content);
         boolean shouldAttachToParent = false;
 
-        View view = inflater.inflate(idForLayoutInflater , parent , shouldAttachToParent);
+        View view = inflater.inflate(idForLayoutInflater , parent , shouldAttachToParent );
         MovieAdapterViewHolder viewHolder = new MovieAdapterViewHolder(view);
 
 
