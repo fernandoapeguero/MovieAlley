@@ -15,7 +15,7 @@ public class MovieNetworkUtils {
     public static final String TMDB_IMAGE_URL = "https://image.tmdb.org/t/p/w185";
 
     public static final String PARAM_API_KEY = "api_key";
-    public static final String TMDB_API_KEY = "c6730ed582b4839591ed194c26e09262";
+    public static final String TMDB_API_KEY = "";
     public static final String PARAM_SEARCH = "query";
     public static final String TMDB_SORT_POPULARITY = "popular";
     public static final String TMDB_SORT_HIGHEST_RATED = "top_rated" ;
